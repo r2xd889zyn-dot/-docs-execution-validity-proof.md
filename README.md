@@ -1,137 +1,135 @@
-# Execution Validity Proof Artifact
-## AATP Fire + MMCT™ Enforcement
+# Execution Validity Engine™
+
+## 🔥 Systems don’t fail because they are wrong  
+## They fail because they act on something that used to be right
 
 ---
 
-## 🔥 System Claim
+Modern systems can be:
 
-The system SHALL NOT allow execution when the underlying state is invalid.
+- correct  
+- compliant  
+- fully functional  
 
----
+…and still produce the wrong outcome.
 
-## 🧠 System Law
-
-No execution without valid state.
-
-Execution is permitted only when:
-
-1. Origin is verifiable (AATP)
-2. Observer is non-erasable
-3. Timestamp is present
-4. State is within temporal bounds
-5. Constraint rules (MMCT™) are satisfied
+👉 Because they execute on **invalid or outdated state**
 
 ---
 
-## ⚙️ Enforcement ModelInput → Validation → MMCT™ → Temporal Check → Enforcement Gate → Allow / Block → Action
----
+## 🔍 The Missing Layer
 
-## 🧪 Test Matrix
+No system asks:
 
-### Test 1 — Bright Line Violation
-
-**Input:**
-- ATS Tier: 1  
-- AI Models: GPT-4  
-- Extent: E2  
-
-**Expected:** BLOCK  
-**Reason:** Low-tier cannot claim generative first-pass origin  
-**Result:** BLOCK ✅
+👉 **“Should this still be executed right now?”**
 
 ---
 
-### Test 2 — Temporal Expiration
+## 🚀 What This Does
 
-**Input:**
-- Valid ATS manifest  
-- Timestamp older than TTL  
+The Execution Validity Engine™ introduces a control layer that:
 
-**Expected:** BLOCK  
-**Reason:** State expired  
-**Result:** BLOCK ✅
-
----
-
-### Test 3 — Drift Violation
-
-**Input:**
-- ATS Tier: 1  
-- Extent: E4  
-
-**Expected:** BLOCK  
-**Reason:** High AI influence under low human authority  
-**Result:** BLOCK ✅
+- verifies origin (AATP / ATS-FRAMEWORK-1.0)
+- enforces constraints (MMCT™)
+- checks temporal validity
+- detects drift
+- **allows or blocks execution**
 
 ---
 
-### Test 4 — Missing Observer
+## ⚙️ Core BehaviorValidate → Check State → Enforce → Allow / Block---
 
-**Input:**
-- No observer field  
+## 🔥 See It Work (Proof)
 
-**Expected:** BLOCK  
-**Reason:** No accountable participant  
-**Result:** BLOCK ✅
+👉 [Execution Validity Proof](docs/execution-validity-proof.md)
 
 ---
 
-### Test 5 — Valid Case
+## 💡 One Line
 
-**Input:**
-- ATS Tier: 2  
-- Extent: E2  
-- Observer present  
-- Fresh timestamp  
-
-**Expected:** ALLOW  
-**Reason:** All constraints satisfied  
-**Result:** ALLOW ✅
+**We prevent systems from making the wrong decision correctly.**
 
 ---
 
-## 🔍 Observed Behavior
+# 🧠 System ArchitectureMillings Method
 
-The system:
+├─ Governance Framework
+├─ GuardianOS
+├─ Constraint Layer (MMCT™)
+├─ Execution Gate (EVE)
+├─ Structural Integrity Reference
+└─ Evaluation Systems---
 
-- Prevents execution when constraints fail  
-- Prevents execution when state is outdated  
-- Prevents execution when origin is invalid  
-- Allows execution only when all conditions are satisfied  
+## 🎯 Purpose
 
----
+The purpose of the Millings Method™ architecture is to ensure:
 
-## 🔐 Key Insight
-
-Failure does not originate from incorrect logic.
-
-Failure originates from:
-
-👉 correct logic applied to invalid or outdated state
-
----
-
-## 🔥 Conclusion
-
-The system successfully enforces:
-
-👉 **Execution Validity**
-
-Actions are not evaluated after execution.  
-They are controlled before execution.
+- human authorship traceability  
+- structural integrity in AI systems  
+- pre-execution authorization controls  
+- constraint-governed decision pathways  
+- transparent governance layers  
 
 ---
 
-## 🧠 Final Statement
+## ⚖️ Governance Principle
 
-This system does not validate outcomes.  
-It determines whether actions are allowed to occur.
+The system follows a strict execution sequence:provenance → chronology → constraint validation → execution decision---
+
+Systems do not act based on:
+
+- narrative pressure  
+- signal volume  
+- unverified assertions  
 
 ---
 
-## 📌 Status
+Execution occurs only when:
 
-- Validation: Complete  
-- Enforcement: Active  
-- Temporal Control: Implemented  
-- Proof: Verified  
+👉 origin is known  
+👉 constraints are satisfied  
+👉 state is valid  
+
+---
+
+## 🔗 Relationship to Subsystems
+
+This repository serves as the central architecture layer connecting:
+
+- governance frameworks  
+- constraint layers  
+- execution control systems  
+- structural integrity references  
+- evaluation environments  
+
+---
+
+## 📌 Key Insight
+
+Systems don’t fail because they are wrong.
+
+They fail because they continue acting on something that used to be right.
+
+---
+
+## 🔐 Core Principle
+
+👉 **No execution without valid state**
+
+---
+
+## 📖 Proof of Enforcement
+
+Full verification of system behavior:
+
+👉 [Execution Validity Proof](docs/execution-validity-proof.md)
+
+---
+
+## 🧠 Authorship & Origin
+
+See:
+
+👉 `ORIGIN_OF_SYSTEM.md`
+
+For full authorship and system lineage documentation.
